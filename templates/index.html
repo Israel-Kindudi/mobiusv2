@@ -126,30 +126,30 @@
             </div>
     
             <div class="eachCarousel">
-                <img src="./img/ethereum-icon.png" alt="">
+                <img src="{{url_for('static',filename='img/handshake-icon-white.svg')}}" alt="">
                 <article class="carouselDesc">
-                    <h1 class="carouselTitle">Ethereum</h1>
-                    <p class="carouselPara">Ethereum is open-source blockchain currency</p>
+                    <h1 class="carouselTitle">Intelligence Artificielle (IA)</h1>
+                    <p class="carouselPara">Explorez les possibilités infinies de l'intelligence artificielle</p>
                     <div class="carouselPrice">
-                        <h3>$25,600</h3>
+                        <h3>IA</h3>
                         <span class="rect"></span>
-                        <h3 class="carouselDiscount">9%</h3>
+                        <h3 class="carouselDiscount"></h3>
                     </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
+                    <button class="btn carouselBtn">En savoir plus</button>
                 </article>
             </div>
     
             <div class="eachCarousel">
-                <img src="./img/tether-icon.png" alt="">
+                <img src="{{url_for('static',filename='img/tether-icon.png')}}" alt="">
                 <article class="carouselDesc">
-                    <h1 class="carouselTitle">Tether</h1>
-                    <p class="carouselPara">Tether is a stable coin cryptocurrency</p>
+                    <h1 class="carouselTitle"> Web et Logiciel</h1>
+                    <p class="carouselPara">Transformez vos idées en réalité</p>
                     <div class="carouselPrice">
-                        <h3>$7,000</h3>
+                        <h3>mobiles</h3>
                         <span class="rect"></span>
-                        <h3 class="carouselDiscount">4%</h3>
+                        <h3 class="carouselDiscount">sites web</h3>
                     </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
+                    <button class="btn carouselBtn">En savoir plus</button>
                 </article>
             </div>
         </div>
@@ -166,15 +166,17 @@
     <!-- Processes -->
     <section class="gridSection">
         <div class="sectionDesc processessDesc">
-            <h1 class="sectionHeader">Chain Process</h1>
-            <p class="sectionPara">We do not charge any fees and we do not require 
-              any registration. You keep your privacy and your 
-              coins.
+            <h1 class="sectionHeader">Commencez dès Aujourd'hui</h1>
+            <p class="sectionPara">
+                Prêt à transformer votre entreprise avec des solutions 
+                technologiques innovantes ? Contactez nos experts pour discuter 
+                de vos besoins de projet et entamez un 
+                voyage de transformation numérique avec Mobius
             </p>
             <div class="eachProcesses">
-                <img src="./img/handshake-icon-white-line.svg" alt="handshake">
+                <img src="{{url_for('static',filename='img/handshake-icon-white-line.svg')}}" alt="handshake">
                 <div class="eachprocessesPara">
-                    <h1 class="processTitle">Trading</h1>
+                    <h1 class="processTitle">Approche Innovante</h1>
                     <p>
                         The act of speculating on cryptocurrency price movements 
                         via a CFD trading account, or buying and selling.
@@ -182,18 +184,41 @@
                 </div>
             </div>
             <div class="eachProcesses">
-                <img src="./img/cart-icon-white-line.svg" alt="handshake">
+                <img src="{{url_for('static',filename='img/cart-icon-white-line.svg')}}" alt="handshake">
                 <div class="eachprocessesPara">
-                    <h1 class="processTitle">Buying</h1>
+                    <h1 class="processTitle">Expertise et Expérience :</h1>
                     <p>
-                        Best cryptocurrency exchanges currently purchase Bitcoin, 
-                        Ethereum, and Litecoin other coins and tokens on the platform.
+                        Notre équipe est composée de professionnels chevronnés ayant 
+                        une vaste expérience dans le développement blockchain, la finance, l'architecture cloud, 
+                        la cybersécurité, l'intelligence artificielle, le développement web et logiciel.
                     </p>
                 </div>
             </div>
         </div>
+        <div class="eachProcesses">
+            <img src="{{url_for('static',filename='img/cart-icon-white-line.svg')}}" alt="handshake">
+            <div class="eachprocessesPara">
+                <h1 class="processTitle">Solutions Axées sur le Client</h1>
+                <p>Nous accordons une grande importance à la satisfaction des
+                     clients et collaborons étroitement avec 
+                    les entreprises pour fournir des solutions adaptées à leurs besoins uniques.
+                </p>
+            </div>
+        </div>
+        <div class="eachProcesses">
+            <img src="{{url_for('static',filename='img/cart-icon-white-line.svg')}}" alt="handshake">
+            <div class="eachprocessesPara">
+                <h1 class="processTitle">Engagement envers la Sécurité</h1>
+                <p> La sécurité est au cœur de nos préoccupations. Nous appliquons 
+                    les meilleures pratiques et les technologies 
+                    avancées pour garantir les plus hauts niveaux de protection des données.
+                </p>
+            </div>
+        </div>
+    
         <div class="sectionPic bouncepic processesPic" id="sectionPic">
-            <img src="./img/chain-process-img.png" alt="">
+            <img src="{{url_for('static',filename='img/chain-process-img.png')}}" alt="">
+
         </div>
     </section>
 
