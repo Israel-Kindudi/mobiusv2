@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./commonStyle.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Mobius</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='commonStyle.css') }}">
+    <!-- Reference to style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,14 +14,14 @@
     <!-- Header -->
     <header>
         <div id="logo">
-            <a href="./index.html">
-            <img src="./img/logo-white.png" alt="">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='img/logo-white.png') }}" alt="Logo">
             </a>
         </div>
         <ul class="nav" id="nav">
             <ul class="navLogo">
-                <a href="./index.html">
-                     <img src="./img/logo-white.png" alt="">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='img/logo-white.png') }}" alt="Logo">
                </a>
             </ul>
 
@@ -28,10 +29,10 @@
             <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
             <li class="nav-link"><a href="./contact.html">Contact</a></li>
             <li class="sociallinkContainer">
-                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
-                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
-                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
-                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+                <img class="sociallink" src="{{ url_for('static', filename='img/fabook-icon-white.svg') }}" alt="Facebook Icon">
+                <img class="sociallink" src="{{ url_for('static', filename='img/twitter-icon-white.svg') }}" alt="Twitter Icon">
+                <img class="sociallink" src="{{ url_for('static', filename='img/linkedin-icon-white.svg') }}" alt="LinkedIn Icon">
+                <img class="sociallink" src="{{ url_for('static', filename='img/whatsapp-icon-white.svg') }}" alt="WhatsApp Icon">
             </li>
         </ul>
         <div id="barContainer">
@@ -43,12 +44,17 @@
     <section class="hero gridSection">
         <div class="sectionDesc">
             <h1 class="headline">
-                Most popular way to trade <span class="cryptoText">CRYPTO</span>.
+                Bienvenue chez <span class="cryptoText">Mobius</span>.
             </h1>
             <p class="sub-headline">
-                You can see a record of all your transactions 
-                anytime you want and never have to worry about 
-                someone erasing or stealing your money!
+                Chez Mobius, nous sommes des pionniers dans 
+                l'utilisation des technologies de pointe pour stimuler 
+                l'innovation et autonomiser les entreprises à l'ère numérique. 
+                Notre gamme de produits et services est conçue pour répondre aux 
+                besoins évolutifs des organisations dans les domaines de 
+                la technologie blockchain, de la finance, des solutions cloud, 
+                de la cybersécurité, de l'intelligence artificielle, 
+                du développement web et du développement logiciel.
             </p>
             <div class="btnContainer">
                 <button class="btn btn1">Contact Now</button>
@@ -56,7 +62,7 @@
             </div>
         </div>
         <div class="sectionPic bouncepic" id="sectionPic">
-            <img src="./img/hero-image.png" alt="">
+            <img src="{{url_for('static', filename = 'img/hero-image.png')}}" alt="">
         </div>
     </section>
 
@@ -64,58 +70,58 @@
     <section>
         <div class="carouselContainer">
             <div class="eachCarousel eachCarouselBorder">
-                <img src="./img/bitcoin-icon.png" alt="">
+                <img src="{{url_for('static', filename='img/bitcoin-icon.png')}}" alt="">
                 <article class="carouselDesc">
-                    <h1 class="carouselTitle">Bitcoin</h1>
-                    <p class="carouselPara">Bitcoin is an innovative payment network</p>
+                    <h1 class="carouselTitle">Solutions Blockchain</h1>
+                    <p class="carouselPara"> finance décentralisée</p>
                     <div class="carouselPrice">
-                        <h3>$34,000</h3>
+                        <h3>DeFi</h3>
                         <span class="rect"></span>
-                        <h3 class="carouselDiscount">15%</h3>
+                        <h3 class="carouselDiscount"></h3>
                     </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
+                    <button class="btn carouselBtn">En Savoir Plus</button>
                 </article>
             </div>
     
             <div class="eachCarousel">
-                <img src="./img/ethereum-icon.png" alt="">
+                <img src="{{url_for('static',filename='img/tether-icon.png')}}" alt="">
                 <article class="carouselDesc">
-                    <h1 class="carouselTitle">Ethereum</h1>
-                    <p class="carouselPara">Ethereum is open-source blockchain currency</p>
+                    <h1 class="carouselTitle">Fintech</h1>
+                    <p class="carouselPara">Innovations en Technologie Financière (Fintech)</p>
                     <div class="carouselPrice">
-                        <h3>$25,600</h3>
+                        <h3>trading </h3>
                         <span class="rect"></span>
-                        <h3 class="carouselDiscount">9%</h3>
+                        <h3 class="carouselDiscount"></h3>
                     </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
+                    <button class="btn carouselBtn">En savoir Plus</button>
                 </article>
             </div>
     
             <div class="eachCarousel">
-                <img src="./img/tether-icon.png" alt="">
+                <img src="{{url_for('static',filename='img/service-icon-1.png')}}" alt="">
                 <article class="carouselDesc">
-                    <h1 class="carouselTitle">Tether</h1>
-                    <p class="carouselPara">Tether is a stable coin cryptocurrency</p>
+                    <h1 class="carouselTitle">Cloud</h1>
+                    <p class="carouselPara">Services Cloud et Infrastructure</p>
                     <div class="carouselPrice">
-                        <h3>$7,000</h3>
+                        <h3>déployer</h3>
                         <span class="rect"></span>
-                        <h3 class="carouselDiscount">4%</h3>
+                        <h3 class="carouselDiscount"> migrer</h3>
                     </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
+                    <button class="btn carouselBtn">En savoir Plus</button>
                 </article>
             </div>
     
             <div class="eachCarousel">
-                <img src="./img/bitcoin-icon.png" alt="">
+                <img src="{{url_for('static',filename='img/service-icon-5.png')}}" alt="">
                 <article class="carouselDesc">
-                    <h1 class="carouselTitle">Bitcoin</h1>
-                    <p class="carouselPara">Bitcoin is an innovative payment network</p>
+                    <h1 class="carouselTitle">Cybersécurité</h1>
+                    <p class="carouselPara">Protégez vos actifs numériques et atténuez les menaces cybernétiques</p>
                     <div class="carouselPrice">
-                        <h3>$34,000</h3>
+                        <h3>CySec</h3>
                         <span class="rect"></span>
-                        <h3 class="carouselDiscount">15%</h3>
+                        <h3 class="carouselDiscount">détection des menaces </h3>
                     </div>
-                    <button class="btn carouselBtn">Buy & Trade</button>
+                    <button class="btn carouselBtn">En savoir Plus</button>
                 </article>
             </div>
     
@@ -401,6 +407,6 @@
     </footer>
     
 
-    <script src="./script.js"></script>
+    <script src="{{url_for('static',filename='script.js')}}"></script>
 </body>
 </html>
