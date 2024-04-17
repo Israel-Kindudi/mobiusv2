@@ -6,10 +6,10 @@ from werkzeug.utils import secure_filename
 import sqlite3
 app = Flask(__name__)
 # Get PostgreSQL database URL from environment variable
-DATABASE_URL = os.environ['postgresql-dimensional-32478']
+#DATABASE_URL = os.environ['postgresql-dimensional-32478']
 # SQLite database initialization
 def create_table():
-    conn = conn = psycopg2.connect(
+    conn = psycopg2.connect(
     dbname="dp1aisj2jigt7",
     user="hjnnmurviuxgrd",
     password="0cd80e9d3f10ac459adbf8e80ae5518e19f7b83dfbb6d9b2f706df4194a9bd4a",
@@ -44,8 +44,13 @@ def submit():
 
         
         # Save form data to the PostgreSQL database
-        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-        cursor = conn.cursor()
+        #conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+        cursor = conn = psycopg2.connect(
+                dbname="dp1aisj2jigt7",
+                user="hjnnmurviuxgrd",
+                password="0cd80e9d3f10ac459adbf8e80ae5518e19f7b83dfbb6d9b2f706df4194a9bd4a",
+                host="ec2-34-193-110-25.compute-1.amazonaws.com"
+)
         cursor.execute('INSERT INTO contacts (email, phone, message, services) VALUES (?, ?, ?, ?)',
                        (email, phone, message, ', '.join(services)))
         conn.commit()
