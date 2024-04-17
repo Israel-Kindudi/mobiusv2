@@ -25,6 +25,7 @@ def create_table():
             services TEXT  -- Add a new field to store selected services
         )
     ''')
+    conn.commit()
 
 @app.route("/",methods=["GET"])
 def index():
@@ -54,9 +55,9 @@ def submit():
         cursor.execute('INSERT INTO contacts (email, phone, message, services) VALUES (?, ?, ?, ?)',
                        (email, phone, message, ', '.join(services)))
         conn.commit()
-        conn.close()
+        #conn.close()
 
-        return 'Form submitted successfully!'
+        return redirect(url_for('index'))
         
 if __name__ == '__main__':
     app.run(debug=True,host="172.16.0.103")
