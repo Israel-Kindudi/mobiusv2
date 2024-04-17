@@ -11,9 +11,6 @@ cookiecutter==2.6.0
 dnslib==0.9.24
 dnspython==2.6.1
 Flask==3.0.2
-flet==0.20.2
-flet-core==0.20.2
-flet-runtime==0.20.2
 gunicorn==21.2.0
 h11==0.14.0
 httpcore==0.17.3
