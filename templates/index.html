@@ -15,7 +15,7 @@
     <header>
         <div id="logo">
             <a href="{{ url_for('index') }}">
-                <img src="{{ url_for('static', filename='img/logo-white.png') }}" alt="Logo">
+                <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="Logo">
             </a>
         </div>
         <ul class="nav" id="nav">
@@ -308,96 +308,48 @@
                 
             </div>
         </div>
-        <div class="sectionPic marketspicSection" id="sectionPic">
-           <h1 class="marketspicHeader">CRYPTOCURRENCY</h1>
-            <div class="marketsPicContainer">
-                <div class="marketPic marketPic1">
-                    <img src="./img/persent-icon-white.svg" alt="">
-                    <article class="marketTitle">Hot Sale</article>
-                </div>
-    
-                <div class="marketPic marketPic2">
-                    <img src="./img/bitcoin-icon-white.svg" alt="">
-                    <article class="marketTitle">Bit coin</article>
-                </div>
-    
-                <div class="marketPic marketPic3">
-                    <img src="./img/ethereum-white-icon.svg" alt="">
-                    <article class="marketTitle">ETHEREUM</article>
-                </div>
-    
-                <div class="marketPic marketPic4">
-                    <img src="./img/handshake-icon-white.svg" alt="">
-                    <article class="marketTitle">CONNECTING</article>
-                </div>
-            </div>
-            </div>
+       
     </section>
 
     <!-- Dashboard -->
     <section class="gridSection">
         <div class="sectionDesc dashboardDesc">
-            <h1 class="sectionHeader">Trade crypto in seconds</h1>
+            <h1 class="sectionHeader">Explorez Votre Tableau de Bord </h1>
             <p class="sectionPara">
-                But with prouple, you can mine bitcoin from your own phone! 
-                You no longer have to worry about costly transactions.
+                Bienvenue sur votre tableau de bord personnalisé chez Mobius. 
+                Découvrez un espace dédié conçu pour simplifier la gestion de vos services 
+                et produits, ainsi que pour faciliter vos interactions avec notre entreprise.
             </p>
-            <button class="btn">Explore Now</button>
+            <button class="btn">Explorer Maintenant</button>
         </div>
 
         <div class="sectionPic dashboardPic">
-            <img src="./img/dashboard-dark.jpg" alt="">
+            <img src="{{url_for('static',filename='img/dashboard-dark.jpg')}}" alt="">
         </div>
 
     </section>
 
-    <div class="fundSection">
-        <div class="sectionDesc">
-            <h1 class="sectionHeader">Control your funds</h1>
+    <div class="joinSection">
+        <div class="joinDesc">
+            <h1 class="sectionHeader">Se Connecter</h1>
             <p class="sectionPara">
-                Our mining pool offers some of the most competitive contracts in the market.
+                Parcourez notre catalogue complet de services et produits innovants
+                . Achetez facilement ce dont vous avez besoin en quelques clics, que ce soit des solutions blockchain,
+                 des services cloud, des logiciels sur mesure, 
+                ou d'autres produits technologiques.
             </p>
-            <div class="fundsContainer">
-                <div class="fund">
-                    <img src="./img/cryptocurrency-white-icon.svg" alt="cryptocurrency">
-                    <h1 class="fundType">Support All Currency</h1>
-                    <p class="darkPara">
-                        Accept and process payments from all types of currencies.
-                    </p>
-                </div>
-
-                <div class="fund">
-                    <img src="./img/blockchain-white-icon.svg" alt="cryptocurrency">
-                    <h1 class="fundType">Block Chain System</h1>
-                    <p class="darkPara">
-                        How it Works, Benefits and its Deployment in Financial
-                    </p>
-                </div>
-
-                <div class="fund">
-                    <img src="./img/cryptocurrency-sell-white-icon.svg" alt="cryptocurrency">
-                    <h1 class="fundType">Fund Selling</h1>
-                    <p class="darkPara">
-                        How to Profit in the Crypto Markets through Investing
-                    </p>
-                </div>
-
-                <div class="fund">
-                    <img src="./img/cryptocurrency-card-white-icon.svg" alt="cryptocurrency">
-                    <h1 class="fundType">Crypto Card</h1>
-                    <p class="darkPara">
-                        Crypto Cards and Why Cryptocurrency are the Future
-                    </p>
-                </div>
-            </div>
         </div>
+        <button class="btn primaryBtn" onclick="redirectToForm()">Se Connecter</button>
     </div>
 
+   
+
+    
     <section class="gridSection">
         <div class="sectionDesc newsletterDesc">
             <h1 class="sectionHeader">Subscribe news!</h1>
             <p class="sectionPara">
-                This is where crypto news websites come in handy and stay up-to-date this sphere.
+                Accédez à votre profil et gérez vos informations personnelles en toute sécurité
             </p>
             <form action="#" class="newsletter">
                 <input type="email" name="" id="newsletter" placeholder="enter your email">
@@ -405,27 +357,18 @@
             </form>
         </div>
         <div class="sectionPic bouncepic newsletterPic">
-            <img src="./img/newsletter.png" alt="">
+            <img src="{{url_for('static',filename='img/newsletter.png')}}" alt="">
         </div>
     </section>
 
     <footer>
-        <div class="joinSection">
-            <div class="joinDesc">
-                <h1 class="sectionHeader">Join with us</h1>
-                <p class="sectionPara">
-                    Once you have created your account, you can purchase coins from website
-                </p>
-            </div>
-            <button class="btn primaryBtn">JOIN NOW</button>
-        </div>
-
         <div class="footerlinksContainer">
             <div class="footerAboutus">
                 <img src="./img/logo-white.png" alt="">
-                <p class="darkPara">With no commissions and a simple user interface, 
-                 Prouple is the most reliable way to trade for 
-                 Cryptocurrency.
+                <p class="darkPara">Besoin d'aide ou de support technique ? Notre tableau 
+                    de bord offre un accès rapide à notre équipe d'assistance dédiée. 
+                    Soumettez des demandes d'assistance, suivez le statut de vos tickets, 
+                    et bénéficiez d'une assistance personnalisée pour toutes vos questions.
                 </p>
                 <div class="footersociallinkContainer">
                     <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
@@ -434,7 +377,7 @@
                     <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
                 </div>
             </div>
-
+    
             <div class="footerlink">
                 <h1 class="linkTitle">Explore</h1>
                 <a href="#" class="eachLink">About us</a>
@@ -442,7 +385,7 @@
                 <a href="#" class="eachLink">Blog</a>
                 <a href="#" class="eachLink">Contact</a>
             </div>
-
+    
             <div class="footerlink">
                 <h1 class="linkTitle">Service</h1>
                 <a href="#" class="eachLink">Mining</a>
@@ -450,7 +393,7 @@
                 <a href="#" class="eachLink">Design</a>
                 <a href="#" class="eachLink">Security</a>
             </div>
-
+    
             <div class="footerlink">
                 <h1 class="linkTitle">Resource</h1>
                 <a href="#" class="eachLink">Style Guide</a>
@@ -458,13 +401,19 @@
                 <a href="#" class="eachLink">License</a>
             </div>
         </div>
-
         <div class="footerCopyright">
-             <p>&copy; 2023 design and developed by <a href="#" class="developedBy">Programming Insider</a>.</p>
-        </div>
+            <p>&copy; 2023 design and developed by <a href="#" class="developedBy">Mobius Corp Programming </a>.</p>
+       </div>
+   
     </footer>
     
 
     <script src="{{url_for('static',filename='script.js')}}"></script>
+    <script>
+        function redirectToForm() {
+          // Redirect to the form page
+          window.location.href = "/form"; // Update this URL with the path to your form page
+        }
+      </script>
 </body>
 </html>

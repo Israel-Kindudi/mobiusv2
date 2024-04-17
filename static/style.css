@@ -170,7 +170,7 @@ header{
 
 
 .eachCarousel{
-    background-color: var(--lightgrey);
+    background-color: lightgrey;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='commonStyle.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./img/logo-white.png" alt="">
+                </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                    <img src="./img/logo-white.png" alt="">
+                </a>
+            </ul>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="./aboutus.html"></a></li>
+            <li class="nav-link"><a href="./contact.html"></a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Contact form -->
+    <section class="gridSection contactSection">
+        <div class="contactformContainer">
+            <h1 class="sectionHeader">Nous Contacter</h1>
+            <form action="#" class="contactForm">
+                <div>
+                    <input type="text" name="nom" id="nom" placeholder="Nom complet" class="contactInput">
+                    <input type="text" name="email" id="email" placeholder="Email" class="contactInput">
+                    <input type="text" name="numero" id="numero" placeholder="numero" class="contactInput">
+                    
+                </div>                               
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="contactInput"></textarea>
+                <label for="services">Select Services:</label><br>
+                    <input type="checkbox" id="blockchain" name="services[]" value="Blockchain">
+                    <label for="blockchain">Blockchain Solutions</label><br>
+            
+                    <input type="checkbox" id="fintech" name="services[]" value="Fintech" >
+                    <label for="fintech">Financial Technology (Fintech)</label><br>
+            
+                    <input type="checkbox" id="cloud" name="services[]" value="Cloud">
+                    <label for="cloud">Cloud Services and Infrastructure</label><br>
+            
+                    <input type="checkbox" id="cybersecurity" name="services[]" value="Cybersecurity">
+                    <label for="cybersecurity">Cybersecurity Solutions</label><br>
+            
+                    <input type="checkbox" id="ai" name="services[]" value="AI">
+                    <label for="ai">Artificial Intelligence (AI)</label><br>
+            
+                    <input type="checkbox" id="webdev" name="services[]" value="WebDev">
+                    <label for="webdev">Web Development</label><br>
+            
+                    <input type="checkbox" id="softwaredev" name="services[]" value="SoftwareDev">
+                    <label for="softwaredev">Software Development</label><br><br>
+                <button type="submit" class="btn primaryBtn contactBtn">Submit</button>
+            </form>
+        </div>
+        <div class="sectionPic bouncepic contactPic" id="sectionPic">
+            <img src="./img/contact-img.png" alt="">
+        </div>
+    </section>
+
+   
+            <div class="footerlink">
+                <h1 class="linkTitle">Service</h1>
+                <a href="#" class="eachLink">Mining</a>
+                <a href="#" class="eachLink">Control Data</a>
+                <a href="#" class="eachLink">Design</a>
+                <a href="#" class="eachLink">Security</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Resource</h1>
+                <a href="#" class="eachLink">Style Guide</a>
+                <a href="#" class="eachLink">Change Log</a>
+                <a href="#" class="eachLink">License</a>
+            </div>
+        </div>
+
+        <div class="footerCopyright">
+             <p>&copy; 2023 design and developed by <a href="#" class="developedBy">Mobius Corp Programming </a>.</p>
+        </div>
+    </footer>
+
+    <script src="{{url_for('static',filename='script.js')}}"></script>    
+</body>
+</html>
