@@ -42,14 +42,14 @@
     <section class="gridSection contactSection">
         <div class="contactformContainer">
             <h1 class="sectionHeader">Nous Contacter</h1>
-            <form action="#" class="contactForm">
+            <form action="/submit" method="post" class="contactForm">
                 <div>
                     <input type="text" name="nom" id="nom" placeholder="Nom complet" class="contactInput">
                     <input type="text" name="email" id="email" placeholder="Email" class="contactInput">
-                    <input type="text" name="numero" id="numero" placeholder="numero" class="contactInput">
+                    <input type="text" name="phone" id="phone" placeholder="numero" class="contactInput">
                     
                 </div>                               
-                <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="contactInput"></textarea>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" class="contactInput"></textarea>
                 <label for="services">Select Services:</label><br>
                     <input type="checkbox" id="blockchain" name="services[]" value="Blockchain">
                     <label for="blockchain">Blockchain Solutions</label><br>
