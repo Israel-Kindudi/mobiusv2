@@ -10,10 +10,10 @@ app = Flask(__name__)
 #DATABASE_URL = os.environ['postgresql-dimensional-32478']
 # SQLite database initialization
 conn = psycopg2.connect(
-    dbname="dp1aisj2jigt7",
-    user="hjnnmurviuxgrd",
-    password="0cd80e9d3f10ac459adbf8e80ae5518e19f7b83dfbb6d9b2f706df4194a9bd4a",
-    host="ec2-34-193-110-25.compute-1.amazonaws.com"
+    dbname="d4jg1r8t17hpvo",
+    user="hmbzjivfzhxhva",
+    password="a0ab1c769cfaae679c0770f359ce01f9601f37627d7b251a5735ae9d96b12b6b",
+    host="ec2-107-21-67-46.compute-1.amazonaws.com"
 )
 
 def create_table():
@@ -59,4 +59,4 @@ def submit():
         
 if __name__ == '__main__':
     create_table()
-    app.run(debug=True,host="172.16.0.100")
+    app.run(debug=True,host="172.16.0.101")
