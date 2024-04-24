@@ -9,12 +9,12 @@ app = Flask(__name__)
 # Get PostgreSQL database URL from environment variable
 #DATABASE_URL = os.environ['postgresql-dimensional-32478']
 # SQLite database initialization
-conn = psycopg2.connect(
-    dbname="d4jg1r8t17hpvo",
-    user="hmbzjivfzhxhva",
-    password="a0ab1c769cfaae679c0770f359ce01f9601f37627d7b251a5735ae9d96b12b6b",
-    host="ec2-107-21-67-46.compute-1.amazonaws.com"
-)
+#conn = psycopg2.connect(
+ #   dbname="d4jg1r8t17hpvo",
+  #  user="hmbzjivfzhxhva",
+   # password="a0ab1c769cfaae679c0770f359ce01f9601f37627d7b251a5735ae9d96b12b6b",
+    #host="ec2-107-21-67-46.compute-1.amazonaws.com"
+#)
 
 def create_table():
     
@@ -58,5 +58,5 @@ def submit():
         return redirect(url_for('index'))
         
 if __name__ == '__main__':
-    create_table()
+    #create_table()
     app.run(debug=True,host="172.16.0.101")
